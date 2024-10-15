@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenSeadragon Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/5.0.0/openseadragon.min.css">
+</head>
+<body>
+<div id="openseadragon" style="width: 800px; height: 600px;"></div>
+<script src="/dist/openseadragon.min.cf6d5ea2.js"></script>
+<script>
+
+    let viewer = OpenSeadragon ({
+        id: "openseadragon",
+        prefixUrl: "//openseadragon.github.io/openseadragon/images/",
+        tileSources: "http://192.168.0.101:8090/image.dzi",
+    })
+
+</script>
+</body>
+</html>
